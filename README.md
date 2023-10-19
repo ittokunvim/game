@@ -25,3 +25,11 @@ Screen Size: 1080x720
 このゲームは、プレイヤーが弾丸を発射して敵を倒すシューティングゲームです。
 
 Screen Size: 700x700
+
+## Frogger Game
+
+[Frogger Game](/frogger)
+
+このゲームは、カエルを操作して動く障害物を避けながらゴールを目指すゲームです。
+
+Screen Size: 800x600
