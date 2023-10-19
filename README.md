@@ -6,10 +6,22 @@
 
 [Timing Game](/timing_game)
 
-Window Size: 800x600
+このゲームは、真ん中のキーをタイミングよく入力してハイスコアを目指すゲームです。
+
+Screen Size: 800x600
 
 ## Click Game
 
 [Click Game](/click_game)
 
-Window Size: 1080x720
+このゲームは、画面上を動き回るオブジェクトをクリックするゲームです。
+
+Screen Size: 1080x720
+
+## 2D Shooting Game
+
+[2D Shooting Game](/2d_shooting)
+
+このゲームは、プレイヤーが弾丸を発射して敵を倒すシューティングゲームです。
+
+Screen Size: 700x700
