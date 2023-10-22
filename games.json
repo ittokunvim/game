@@ -3,6 +3,7 @@
 		"slug": "timing_game",
 		"name": "タイミングゲーム",
 		"description": "このゲームは、真ん中のキーをタイミングよく入力してハイスコアを目指すゲームです。",
+		"thumbnail": "800x631.png",
 		"width": 800,
 		"height": 600
 	},
@@ -10,6 +11,7 @@
 		"slug": "click_game",
 		"name": "クリックゲーム",
 		"description": "このゲームは、画面上を動き回るオブジェクトをクリックするゲームです。",
+		"thumbnail": "1080x750.png",
 		"width": 1080,
 		"height": 720
 	},
@@ -17,6 +19,7 @@
 		"slug": "2d_shooting",
 		"name": "2Dシューティングゲーム",
 		"description": "このゲームは、プレイヤーが弾丸を発射して敵を倒すシューティングゲームです。",
+		"thumbnail": "700x725.png",
 		"width": 700,
 		"height": 700
 	},
@@ -24,6 +27,7 @@
 		"slug": "frogger",
 		"name": "フロッガーゲーム",
 		"description": "このゲームは、カエルを操作して動く障害物を避けながらゴールを目指すゲームです。",
+		"thumbnail": "800x630.png",
 		"width": 800,
 		"height": 600
 	}
