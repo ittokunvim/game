@@ -28,12 +28,28 @@ function createGameDescription(description) {
 	return createDescription;
 }
 
-// function createGameThumbnail(image) {
-// 	const createImage = document.createElement('div');
-// 	createImage.classList.add('image');
+function splitImageSize(image) {
+	image = image.split('.').slice(0, -1).join('.') // Remove extension
 
-// 	return createImage;
-// }
+	return image.split('x'); // split width and height
+}
+
+function createGameThumbnail(slug, image) {
+	const createThumbnail = document.createElement('div');
+	createThumbnail.classList.add('thumbnail');
+
+	const createImage = document.createElement('img');
+	const imageUrl = slug + "/" + image;
+	const [width, height] = splitImageSize(image);
+
+	createImage.src = imageUrl;
+	createImage.width = width;
+	createImage.height = height;
+	createImage.loading = "lazy";
+	createThumbnail.appendChild(createImage);
+
+	return createThumbnail;
+}
 
 function createGameScreenSize(width, height) {
 	const createScreenSize = document.createElement('div');
@@ -52,14 +68,14 @@ games.forEach(function(game) {
 	const createGame = document.createElement('div');
 	createGame.classList.add('game');
 
+	const gameThumbnail = createGameThumbnail(game.slug, game.thumbnail);
 	const gameLink = createGameLink(game.slug, game.name);
 	const gameDescription = createGameDescription(game.description);
-	// const gameThumbnail = createGameThumbnail(game.thumbnail);
 	const gameScreenSize = createGameScreenSize(game.width, game.height);
 
+	createGame.appendChild(gameThumbnail);
 	createGame.appendChild(gameLink);
 	createGame.appendChild(gameDescription);
-	// createGame.appendChild(gameThumbnail);
 	createGame.appendChild(gameScreenSize);
 
 	gameList.appendChild(createGame);
