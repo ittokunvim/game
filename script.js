@@ -3,7 +3,7 @@
  * <div id="games"></div>
  **/
 
-import games from "./games.json" assert { type: "json" };
+// import games from "./games.json" assert { type: "json" };
 
 function createGameLink(slug, name) {
 	const createLink = document.createElement('div');
@@ -64,19 +64,24 @@ function createGameScreenSize(width, height) {
 
 const gameList = document.querySelector('#games');
 
-games.forEach(function(game) {
-	const createGame = document.createElement('div');
-	createGame.classList.add('game');
+window.onload =  async function() {
+	const response = await fetch('./games.json');
+	const games = await response.json();
 
-	const gameThumbnail = createGameThumbnail(game.slug, game.thumbnail);
-	const gameLink = createGameLink(game.slug, game.name);
-	const gameDescription = createGameDescription(game.description);
-	const gameScreenSize = createGameScreenSize(game.width, game.height);
+	games.forEach(function(game) {
+		const createGame = document.createElement('div');
+		createGame.classList.add('game');
 
-	createGame.appendChild(gameThumbnail);
-	createGame.appendChild(gameLink);
-	createGame.appendChild(gameDescription);
-	createGame.appendChild(gameScreenSize);
+		const gameThumbnail = createGameThumbnail(game.slug, game.thumbnail);
+		const gameLink = createGameLink(game.slug, game.name);
+		const gameDescription = createGameDescription(game.description);
+		const gameScreenSize = createGameScreenSize(game.width, game.height);
 
-	gameList.appendChild(createGame);
-});
+		createGame.appendChild(gameThumbnail);
+		createGame.appendChild(gameLink);
+		createGame.appendChild(gameDescription);
+		createGame.appendChild(gameScreenSize);
+
+		gameList.appendChild(createGame);
+	});
+}
