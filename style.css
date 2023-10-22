@@ -1,10 +1,75 @@
 :root {
 	--background-color: #f5f5f5;
 	--text-color: #333333;
+	--text-gray: #999999;
 }
 
 body {
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	background-color: var(--background-color);
 	color: var(--text-color);
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+hr {
+	margin: 1rem;
+	padding: 1rem;
+	border: none;
+	border-bottom: 1px solid #cccccc;
+}
+
+.about {
+	padding: 0 1rem;
+}
+
+#games {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#games .game {
+	padding: 1em;
+	border-bottom: 1px solid #cccccc;
+}
+
+#games .game:last-child {
+	border-bottom: none;
+}
+
+#games .game .link {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#games .game .link a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+#games .game .link a:hover {
+	text-decoration: underline;
+}
+
+#games .game .description {
+	font-size: 0.8em;
+}
+
+#games .game .size {
+	font-size: 0.8em;
+	color: var(--text-gray);
 }
