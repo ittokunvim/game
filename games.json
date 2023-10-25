@@ -30,5 +30,13 @@
 		"thumbnail": "300x240.png",
 		"width": 800,
 		"height": 600
+	},
+	{
+		"slug": "flappy_bird",
+		"name": "フラッピーバード",
+		"description": "このゲームは、画面上部から画面下部に向かって進む小さな鳥を操作し、障害物の間を通り抜け、高得点を目指すげーむです。",
+		"thumbnail": "300x240.png",
+		"width": 700,
+		"height": 700
 	}
 ]
