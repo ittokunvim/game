@@ -3,7 +3,7 @@
  * <div id="games"></div>
  **/
 
-// import games from "./games.json" assert { type: "json" };
+// import games from "./data.json" assert { type: "json" };
 
 function createGameLink(slug, name) {
 	const createLink = document.createElement('div');
@@ -65,7 +65,7 @@ function createGameScreenSize(width, height) {
 const gameList = document.querySelector('#games');
 
 window.onload =  async function() {
-	const response = await fetch('./games.json');
+	const response = await fetch('./data.json');
 	const games = await response.json();
 
 	games.forEach(function(game) {

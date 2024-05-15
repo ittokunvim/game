@@ -1,7 +1,9 @@
 # wasm-games
 
-このリポジトリは、開発したゲームをWebAssembly（Wasm）に変換したソースコードの保管場所です。
+このリポジトリには、開発したゲームのソースコードが保存されています。
 
-ゲームは自身のウェブサイトで公開しているのでよければ寄って見てください。
+## Info
 
-ゲームの情報は[games.json](/games.json)にまとめています。
+WebSite: [games.ittokunvim.net](https://games.ittokunvim.net)
+
+JSON: [data.json](/data.json)
