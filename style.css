@@ -1,17 +1,25 @@
 :root {
-	--background-color: #f5f5f5;
-	--border-color: #cccccc;
-	--text-color: #333333;
-	--text-gray: #999999;
+	--color-text-primary: #333333;
+	--color-text-secondary: #666666;
+	--color-text-link: #1e90ff;
+
+	--color-background-primary: #ffffff;
+	--color-background-secondary: #f5f5f5;
+
+	--color-border-primary: #d8d8d8;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1rem;
 	background-color: var(--background-color);
 	color: var(--text-color);
 	max-width: 800px;
 	margin: 0 auto;
+	padding: 1rem;
 }
 
 h1 {
@@ -20,70 +28,79 @@ h1 {
 	text-align: center;
 }
 
-h2 {
-	font-size: 1.8rem;
-	font-weight: bold;
+hr {
+	margin: 1rem 0;
+	padding: 1rem;
+	border: none;
+	border-bottom: 1px solid var(--color-border-primary);
+}
+
+#games h2 {
+	font-size: 1.5rem;
 	text-align: center;
 }
 
-hr {
-	margin: 1rem;
-	padding: 1rem;
-	border: none;
-	border-bottom: 1px solid #cccccc;
-}
-
-.about {
-	padding: 0 1rem;
-}
-
-.games-wrapper {
-	display: flex;
-	padding: 1rem;
-	overflow-x: scroll;
-}
-
-#games {
-	display: flex;
+#games .list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 	gap: 1rem;
 }
 
-#games .game {
-	border: 1px solid var(--border-color);
+#games .item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25em;
+	border: 1px solid var(--color-border-primary);
 }
 
-#games .game:last-child {
-	border-bottom: none;
+#games .item p {
+	margin: 0;
 }
 
-#games .game .thumbnail img {
-	width: 280px;
-	height: 217px;
-	object-fit: cover;
+#games .item .thumbnail {
+	position: relative;
+	padding-bottom: 80%;
 }
 
-#games .game .link {
+#games .item .thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#games .item .link {
+	font-size: 0.9em;
 	text-align: center;
-	font-size: 1em;
+}
+
+#games .item .link a {
+	color: var(--color-text-link);
+	text-decoration: none;
 	font-weight: bold;
 }
 
-#games .game .link a {
-	color: var(--text-color);
-	text-decoration: none;
-}
-
-#games .game .link a:hover {
+#games .item .link a:hover {
 	text-decoration: underline;
 }
 
-#games .game .description {
+#games .item .description {
 	font-size: 0.8em;
 	padding: 0 0.2em;
 }
 
-#games .game .size {
+#games .item .size {
 	font-size: 0.8em;
-	color: var(--text-gray);
+	color: var(--color-text-secondary);
 	padding: 0 0.2em;
+}
+
+.copyright {
+	font-size: 0.8em;
+	text-align: center;
+	color: var(--color-text-secondary);
+	margin-top: 2rem;
+	border-top: 1px solid var(--color-border-primary);
 }
