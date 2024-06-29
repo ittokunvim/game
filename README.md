@@ -1,9 +1,13 @@
-# wasm-games
+# games
 
-このリポジトリには、開発したゲームのソースコードが保存されています。
+ここには私が開発したゲームのソースコードが置かれています。
 
-## Info
+また公開するゲームを`data.json`にまとめています。
 
-WebSite: [games.ittokunvim.net](https://games.ittokunvim.net)
+## 各種ゲーム
 
-JSON: [data.json](/data.json)
+- タイミングゲーム
+- クリックゲーム
+- 2Dシューティングゲーム
+- フロッガー
+- フラッピーバード
