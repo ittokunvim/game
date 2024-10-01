@@ -38,5 +38,13 @@
 		"width": 700,
 		"height": 700,
 		"createdAt": "2023-10-26"
+	},
+	{
+		"slug": "bevy-timing-game",
+		"name": "タイミングゲーム",
+		"description": "ゲームエンジンBevyで作られたタイミングゲーム",
+		"width": 640,
+		"height": 480,
+		"createdAt": "2024-10-01"
 	}
 ]
