@@ -46,5 +46,13 @@
 		"width": 640,
 		"height": 480,
 		"createdAt": "2024-10-01"
+	},
+	{
+		"slug": "bevy-click-game",
+		"name": "クリックゲーム",
+		"description": "ゲームエンジンBevyで作られたクリックゲーム",
+		"width": 640,
+		"height": 480,
+		"createdAt": "2024-12-09"
 	}
 ]
