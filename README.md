@@ -40,3 +40,4 @@ JSON: [data.json](docs/data.json)
 - `flappy_bird`
 - `bevy-timing-game`
 - `bevy-click-game`
+- `bevy-2dshooting-game`
