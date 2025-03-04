@@ -166,7 +166,7 @@
 					const gameThumbnail = createGameThumbnail(game.slug);
 					const gameLink = createGameLink(game.slug, game.name);
 					const gameDescription = createGameDescription(game.description);
-					const gameScreenSize = createGameScreenSize(game.width, game.height);
+					const gameScreenSize = createGameScreenSize(game.size);
 					const gameCreatedAt = createGameCreatedAt(game.createdAt);
 
 					myGame.classList.add('item');
@@ -224,7 +224,9 @@
 				return myThumbnail;
 			}
 
-			function createGameScreenSize(width, height) {
+			function createGameScreenSize(size) {
+				const [width, height] = size.split("x");
+
 				const myScreenSize = document.createElement('div');
 				myScreenSize.classList.add('size');
 
