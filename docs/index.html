@@ -104,7 +104,7 @@
 				padding: 0 0.2em;
 			}
 
-			#games .item .created_at {
+			#games .item .date {
 				font-size: 0.8em;
 				color: var(--color-text-secondary);
 				padding: 0 0.2em;
@@ -141,6 +141,7 @@
 			//   "width": "number",
 			//   "height": "number"
 			//   "createdAt": "string"
+			//   "updatedAt": "string"
 			// }
 
 			async function fetchJson() {
@@ -167,7 +168,7 @@
 					const gameLink = createGameLink(game.slug, game.name);
 					const gameDescription = createGameDescription(game.description);
 					const gameScreenSize = createGameScreenSize(game.size);
-					const gameCreatedAt = createGameCreatedAt(game.createdAt);
+					const gameDate = createGameDate(game.createdAt, game.updatedAt);
 
 					myGame.classList.add('item');
 
@@ -175,7 +176,7 @@
 					myGame.appendChild(gameLink);
 					myGame.appendChild(gameDescription);
 					myGame.appendChild(gameScreenSize);
-					myGame.appendChild(gameCreatedAt);
+					myGame.appendChild(gameDate);
 
 					gamesList.appendChild(myGame);
 				});
@@ -237,19 +238,29 @@
 				return myScreenSize;
 			}
 
-			function createGameCreatedAt(createdAt) {
+			function createGameDate(createdAt, updatedAt) {
 				const myDiv = document.createElement("div");
-				myDiv.classList.add("created_at");
+				myDiv.classList.add("date");
 
-				const myPara = document.createElement("p");
-				const date = new Date(createdAt);
+				const myPara1 = document.createElement("p");
+				const myPara2 = document.createElement("p");
+				const formatCreated = formatDate(createdAt);
+				const formatUpdated = formatDate(updatedAt);
+
+				myPara1.textContent = `${formatCreated}に作成`;
+				myPara2.textContent = `${formatUpdated}に更新`;
+				myDiv.appendChild(myPara1);
+				myDiv.appendChild(myPara2);
+
+				return myDiv;
+			}
+
+			function formatDate(date) {
+				date = new Date(date);
 				const year = date.getFullYear();
 				const month = date.getMonth() + 1;
 				const day = date.getDate();
-				myPara.textContent = `${year}年${month}月${day}日に作成`;
-				myDiv.appendChild(myPara);
-
-				return myDiv;
+				return `${year}年${month}月${day}日`;
 			}
 		</script>
 	</body>
