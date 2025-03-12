@@ -1,7 +1,7 @@
 [
 	{
 		"slug": "timing_game",
-		"name": "タイミングゲームv1",
+		"title": "タイミングゲームv1",
 		"description": "このゲームは、真ん中のキーをタイミングよく入力してハイスコアを目指すゲームです",
 		"size": "800x600",
 		"createdAt": "2023-10-07",
@@ -9,7 +9,7 @@
 	},
 	{
 		"slug": "click_game",
-		"name": "クリックゲームv1",
+		"title": "クリックゲームv1",
 		"description": "このゲームは、画面上を動き回るオブジェクトをクリックするゲームです",
 		"size": "1080x720",
 		"createdAt": "2023-10-08",
@@ -17,7 +17,7 @@
 	},
 	{
 		"slug": "2d_shooting",
-		"name": "2Dシューティングゲームv1",
+		"title": "2Dシューティングゲームv1",
 		"description": "このゲームは、プレイヤーが弾丸を発射して敵を倒すシューティングゲームです",
 		"size": "700x700",
 		"createdAt": "2023-10-09",
@@ -25,7 +25,7 @@
 	},
 	{
 		"slug": "frogger",
-		"name": "フロッガーゲーム",
+		"title": "フロッガーゲーム",
 		"description": "このゲームは、カエルを操作して動く障害物を避けながらゴールを目指すゲームです",
 		"size": "800x600",
 		"createdAt": "2023-10-20",
@@ -33,7 +33,7 @@
 	},
 	{
 		"slug": "flappy_bird",
-		"name": "フラッピーバード",
+		"title": "フラッピーバード",
 		"description": "このゲームは、小さな鳥を操作して障害物の間を通り抜け、高得点を目指すゲームです",
 		"size": "700x700",
 		"createdAt": "2023-10-26",
@@ -41,7 +41,7 @@
 	},
 	{
 		"slug": "bevy-timing-game",
-		"name": "タイミングゲームv2",
+		"title": "タイミングゲームv2",
 		"description": "ゲームエンジンBevyで作られたタイミングゲーム",
 		"size": "640x480",
 		"createdAt": "2024-10-01",
@@ -49,7 +49,7 @@
 	},
 	{
 		"slug": "bevy-click-game",
-		"name": "クリックゲームv2",
+		"title": "クリックゲームv2",
 		"description": "ゲームエンジンBevyで作られたクリックゲーム",
 		"size": "640x480",
 		"createdAt": "2024-12-10",
@@ -57,7 +57,7 @@
 	},
 	{
 		"slug": "bevy-2dshooting-game",
-		"name": "2Dシューティングゲームv2",
+		"title": "2Dシューティングゲームv2",
 		"description": "ゲームエンジンBevyで作られた2Dのシューティングゲーム",
 		"size": "640x480",
 		"createdAt": "2024-12-13",

@@ -136,7 +136,7 @@
 			// JSON structure
 			// {
 			//   "slug": "string",
-			//   "name": "string",
+			//   "title": "string",
 			//   "description": "string",
 			//   "width": "number",
 			//   "height": "number"
@@ -165,7 +165,7 @@
 				data.forEach((game) => {
 					const myGame = document.createElement('div');
 					const gameThumbnail = createGameThumbnail(game.slug);
-					const gameLink = createGameLink(game.slug, game.name);
+					const gameLink = createGameLink(game.slug, game.title);
 					const gameDescription = createGameDescription(game.description);
 					const gameScreenSize = createGameScreenSize(game.size);
 					const gameDate = createGameDate(game.createdAt, game.updatedAt);
@@ -185,13 +185,13 @@
 				games.appendChild(gamesList);
 			}
 
-			function createGameLink(slug, name) {
+			function createGameLink(slug, title) {
 				const myLink = document.createElement('div');
 				myLink.classList.add('link');
 
 				const myA = document.createElement('a');
 				myA.href = slug + ".html";
-				myA.textContent = name;
+				myA.textContent = title;
 				myLink.appendChild(myA);
 
 				return myLink;

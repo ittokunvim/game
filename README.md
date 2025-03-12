@@ -15,7 +15,7 @@
 ```json
 {
 	"slug": "game-slug",
-	"name": "ゲームのタイトル",
+	"title": "ゲームのタイトル",
 	"description": "ゲームの説明",
 	"size": "800x600",
 	"createdAt": "2024-12-10",
