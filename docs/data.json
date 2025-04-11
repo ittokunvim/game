@@ -62,5 +62,13 @@
 		"size": "640x480",
 		"createdAt": "2024-12-13",
 		"updatedAt": "2025-01-08"
+	},
+	{
+		"slug": "ittoku-tetris",
+		"title": "いっとくテトリス",
+		"description": "ゲームエンジンBevyで作られたテトリス",
+		"size": "640x480",
+		"createdAt": "2025-04-11",
+		"updatedAt": "2025-04-11"
 	}
 ]
