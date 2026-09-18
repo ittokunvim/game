@@ -7,9 +7,9 @@
     "updatedAt": "2026-09-11"
   },
   {
-    "slug": "godot-flappy-bird",
-    "title": "Flappy Bird (Godot)",
-    "description": "Godotで作ったFlappy Birdゲーム",
+    "slug": "godot-flappy-glider",
+    "title": "Flappy Glider (Godot)",
+    "description": "Godotで作った空を飛ぶ紙飛行機ゲーム",
     "createdAt": "2026-09-18",
     "updatedAt": "2026-09-18"
   }
