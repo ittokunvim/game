@@ -5,4 +5,4 @@
 ## ゲーム一覧
 
 - Pongゲーム (Godot)
-- Flappy Glider (Godot)
+- Flappy Bird (Godot)
