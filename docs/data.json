@@ -12,5 +12,12 @@
     "description": "Godotで作ったFlappy Birdゲーム",
     "createdAt": "2026-09-18",
     "updatedAt": "2026-09-18"
+  },
+  {
+    "slug": "godot-breakout",
+    "title": "ブロック崩しゲーム (Godot)",
+    "description": "Godotで作ったブロック崩しゲーム",
+    "createdAt": "2026-09-26",
+    "updatedAt": "2026-09-26"
   }
 ]
