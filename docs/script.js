@@ -66,7 +66,7 @@ async function fetchJson() {
 
       const updatedAt = document.createElement("div");
       updatedAt.className = "updatedAt";
-      updatedAt.textContent = data.createdAt
+      updatedAt.textContent = data.updatedAt
 
       item.append(
         thumbnail,
