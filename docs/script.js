@@ -3,15 +3,6 @@ const games = document.getElementById("games");
 const JsonPath = "./data.json";
 const GamesTitle = "ゲーム一覧";
 
-// JSON structure
-// {
-//   "slug": "string",
-//   "title": "string",
-//   "description": "string",
-//   "createdAt": "string"
-//   "updatedAt": "string"
-// }
-
 async function fetchJson() {
   const response = await fetch(JsonPath, { cache: "no-store" });
 
@@ -39,14 +30,6 @@ async function fetchJson() {
   return data;
 }
 
-// <div class="item">
-// <div class="thumbnail">
-// <img src="images/godot-pong.png"></div>
-// <a class="title" href="godot-pong">Pongゲーム (Godot)</a>
-// <div class="description">Godotで作ったPongゲーム</div>
-// <div class="createdAt">作成日時：2026年9月11日</div>
-// <div class="updatedAt">更新日時：2026年9月11日</div>
-// </div>
 async function createGameList() {
   try {
     const data = await fetchJson();
