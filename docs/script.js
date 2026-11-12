@@ -65,7 +65,7 @@ async function createGameList() {
 
       const image = document.createElement("img");
       image.src = `images/${data.slug}.png`;
-      image.alt = "ゲームのサムネイル";
+      image.alt = `${data.slug}のサムネイル`;
 
       thumbnail.appendChild(image);
 
